@@ -8,7 +8,7 @@ public class Reverse {
 	public static void main (String[] args){
 	String s = args[0];
 	for (int right = s.length() - 1; right >= 0; right--){
-		System.out.println(s.charAt(right));
+		System.out.print(s.charAt(right));
 
 	}
 	System.out.println();
