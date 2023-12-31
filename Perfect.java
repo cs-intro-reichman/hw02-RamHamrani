@@ -4,7 +4,7 @@
 public class Perfect {
 	public static void main (String[] args) {
 		int a = Integer.parseInt(args[0]);
-		String s = a + " is a perfect number since " + a + " = 1";
+		String s = a + " is a perfect number since " + a + " = ";
 		int b = 0;
 		for(int c = 1; c < a; c++){
 			if((a%c) == 0){
