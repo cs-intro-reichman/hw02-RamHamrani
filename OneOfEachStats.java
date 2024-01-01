@@ -18,7 +18,7 @@ public class OneOfEachStats {
 		int twoChildren = 0, threeChildren = 0, fourOrMore = 0, temp = 0;
 		double a = generator.nextDouble();
 		double count = 0;
-	for(int i = 1; i <= t; i++){
+	for(int i = 0; i < t; i++){
 		boolean boy = false;
 		boolean girl = false;
 	while((boy&&girl) == false){
@@ -26,9 +26,13 @@ public class OneOfEachStats {
 			boy = true;
 			temp++;
 		}
-			else{
+			else if(a > 0.5){
 				girl = true;
 				temp++;
+			}
+			else if(a == 0.5){
+				a = Math.random();
+			}
 			}
 			a = Math.random();
 		}

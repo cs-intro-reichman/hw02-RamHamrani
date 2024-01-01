@@ -10,7 +10,7 @@ public class OneOfEachStats1 {
 	int twoChildren = 0, threeChildren = 0, fourOrMore = 0, temp = 0;
 	double a = Math.random();
 	double count = 0;
-	for(int i = 0; i <= t; i++){
+	for(int i = 0; i < t; i++){
 		boolean boy = false;
 		boolean girl = false;
 	while((boy&&girl) == false){
