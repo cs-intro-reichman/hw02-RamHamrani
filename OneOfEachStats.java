@@ -14,10 +14,9 @@ public class OneOfEachStats {
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
-		int t = Integer.parseInt(args[0]);
 		int twoChildren = 0, threeChildren = 0, fourOrMore = 0, temp = 0;
 		double count = 0;
-	for(int i = 0; i < t; i++){
+	for(int i = 0; i < T; i++){
 		boolean boy = false;
 		boolean girl = false;
 	while((boy&&girl) == false){
@@ -42,7 +41,7 @@ public class OneOfEachStats {
 				temp = 0;
 				
 	}
-		double average = count / t;
+		double average = count / T;
 			
 		System.out.println("Average: " + average + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + twoChildren);
