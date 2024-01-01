@@ -24,12 +24,13 @@ public class OneOfEachStats {
 	while((boy&&girl) == false){
 		if(a < 0.5){
 			boy = true;
+			temp++;
 		}
 			else{
 				girl = true;
+				temp++;
 			}
 			a = Math.random();
-			temp++;
 		}
 			if(temp == 2){
 				twoChildren++;
